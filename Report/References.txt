@@ -1,0 +1,26 @@
+Géron, A. (2022). Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd ed.). O'Reilly Media.
+Chapter 7 ("Ensemble Learning and Random Forests"): This chapter is the primary source for Random Forests and Gradient Boosting. It provides the theory, implementation details in scikit-learn, and practical advice on their use.
+Chapter 4 ("Training Models"): This chapter introduces linear models and the concept of regularization, which is relevant for the GLM models.
+Scikit-Learn Documentation.
+sklearn.ensemble.GradientBoostingRegressor: The official documentation provides implementation details and parameter descriptions for the Gradient Boosting model. (scikit-learn.org)
+sklearn.linear_model.PoissonRegressor: The documentation for Poisson Regression, explaining its use for modeling count data. (scikit-learn.org)
+sklearn.ensemble.RandomForestRegressor: The documentation for the Random Forest model. (scikit-learn.org)
+XGBoost & LightGBM Documentation.
+These libraries are considered industry standards for gradient boosting and are frequently used in insurance risk modeling for their performance and scalability. Their documentation provides guides on implementation. (xgboost.readthedocs.io) and (lightgbm.readthedocs.io).
+
+
+For M3:1.  **Géron, A. (2022).** *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* (3rd ed.). O'Reilly Media. This book provided the foundational structure for the project's machine learning pipelines, including model evaluation (Chapter 2), Decision Trees (Chapter 6), and ensemble methods like Gradient Boosting (Chapter 7).
+
+2.  **Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., ... & Liu, T.-Y. (2017).** *LightGBM: A Highly Efficient Gradient Boosting Decision Tree*. In Advances in Neural Information Processing Systems 30 (NIPS 2017). This paper introduces the LightGBM algorithm, which was used as the M3 model in this project for its high performance and efficiency.
+
+3.  **Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Duchesnay, É. (2011).** *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 12, 2825-2830. The scikit-learn library was used for building preprocessing pipelines (`Pipeline`, `ColumnTransformer`), performing hyperparameter tuning (`GridSearchCV`), and calculating evaluation metrics (`mean_squared_error`, `mean_absolute_error`, etc.).
+
+4.  **Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., ... & Oliphant, T. E. (2020).** *Array programming with NumPy*. Nature, 585(7825), 357-362. The NumPy library was used for numerical operations, including array manipulations and mathematical calculations such as `np.sqrt`.
+
+5.  **McKinney, W. (2010).** *Data Structures for Statistical Computing in Python*. In Proceedings of the 9th Python in Science Conference (Vol. 445, pp. 51-56). The pandas library was used for data loading, manipulation, and preparation via its DataFrame structure.
+
+6.  **Hunter, J. D. (2007).** *Matplotlib: A 2D graphics environment*. Computing in Science & Engineering, 9(3), 90-95. The Matplotlib library was used for creating static, animated, and interactive visualizations, including the feature importance plots.
+
+7.  **Waskom, M. L. (2021).** *seaborn: statistical data visualization*. Journal of Open Source Software, 6(60), 3021. The seaborn library was used to create the bar plot for visualizing feature importances due to its high-level interface for drawing attractive statistical graphics.
+
+8. ** https://openacttexts.github.io/Loss-Data-Analytics/ChapRiskClass.html#S:RC:PoissonRegression. 
